@@ -1,0 +1,1121 @@
+{
+	"info": {
+		"_postman_id": "6af0990f-9757-4f73-9246-5d5adab59d2d",
+		"name": "TCC - Torcidas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26894764",
+		"_collection_link": "https://orange-shuttle-686758.postman.co/workspace/TCC~c5582697-22a5-4fb0-bd60-d58c673e8cfb/collection/26894764-6af0990f-9757-4f73-9246-5d5adab59d2d?action=share&source=collection_link&creator=26894764"
+	},
+	"item": [
+		{
+			"name": "PAIS",
+			"item": [
+				{
+					"name": "Consulta pais",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "aa",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "aa",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pais/26",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pais",
+								"26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista paises",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/pais",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pais"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Carga de Paises",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"nome_pais\": \"AFEGANISTAO\",\r\n        \"abrev_pais\": \"AFE\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"AFRICA DO SUL\",\r\n        \"abrev_pais\": \"AFR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ALBANIA\",\r\n        \"abrev_pais\": \"ALB\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ALEMANHA\",\r\n        \"abrev_pais\": \"ALE\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ANDORRA\",\r\n        \"abrev_pais\": \"AND\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ANGOLA\",\r\n        \"abrev_pais\": \"ANG\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ANTIGUA E BARBUDA\",\r\n        \"abrev_pais\": \"ANT\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ARABIA SAUDITA\",\r\n        \"abrev_pais\": \"ARA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ARGELIA\",\r\n        \"abrev_pais\": \"ARG\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ARGENTINA\",\r\n        \"abrev_pais\": \"ARG\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ARMENIA\",\r\n        \"abrev_pais\": \"ARM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"AUSTRALIA\",\r\n        \"abrev_pais\": \"AUS\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"AUSTRIA\",\r\n        \"abrev_pais\": \"AUS\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"AZERBAIJAO\",\r\n        \"abrev_pais\": \"AZE\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BAHAMAS\",\r\n        \"abrev_pais\": \"BAH\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BANGLADESH\",\r\n        \"abrev_pais\": \"BAN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BARBADOS\",\r\n        \"abrev_pais\": \"BAR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BAREM\",\r\n        \"abrev_pais\": \"BAR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BELGICA\",\r\n        \"abrev_pais\": \"BEL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BELIZE\",\r\n        \"abrev_pais\": \"BLZ\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BENIN\",\r\n        \"abrev_pais\": \"BEN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BIELORRUSSIA\",\r\n        \"abrev_pais\": \"BIE\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BOLIVIA\",\r\n        \"abrev_pais\": \"BOL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BOSNIA E HERZEGOVINA\",\r\n        \"abrev_pais\": \"BOS\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BOTSUANA\",\r\n        \"abrev_pais\": \"BOT\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BRASIL\",\r\n        \"abrev_pais\": \"BRA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BRUNEI\",\r\n        \"abrev_pais\": \"BRU\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BULGARIA\",\r\n        \"abrev_pais\": \"BUL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BURQUINA FASO\",\r\n        \"abrev_pais\": \"BUR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BURUNDI\",\r\n        \"abrev_pais\": \"BUR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"BUTAO\",\r\n        \"abrev_pais\": \"BUT\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CABO VERDE\",\r\n        \"abrev_pais\": \"CAB\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CAMAROES\",\r\n        \"abrev_pais\": \"CAM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CAMBOJA\",\r\n        \"abrev_pais\": \"CAM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CANADA\",\r\n        \"abrev_pais\": \"CAN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CATAR\",\r\n        \"abrev_pais\": \"CAT\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CAZAQUISTAO\",\r\n        \"abrev_pais\": \"CAZ\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CHADE\",\r\n        \"abrev_pais\": \"CHA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CHILE\",\r\n        \"abrev_pais\": \"CHI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CHINA\",\r\n        \"abrev_pais\": \"CHI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CHIPRE\",\r\n        \"abrev_pais\": \"CHI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"COLOMBIA\",\r\n        \"abrev_pais\": \"COL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"COMORES\",\r\n        \"abrev_pais\": \"COM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CONGO\",\r\n        \"abrev_pais\": \"CON\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"COREIA DO NORTE\",\r\n        \"abrev_pais\": \"COR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"COREIA DO SUL\",\r\n        \"abrev_pais\": \"COR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"COSTA DO MARFIM\",\r\n        \"abrev_pais\": \"COS\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"COSTA RICA\",\r\n        \"abrev_pais\": \"COS\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CROACIA\",\r\n        \"abrev_pais\": \"CRO\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"CUBA\",\r\n        \"abrev_pais\": \"CUB\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"DINAMARCA\",\r\n        \"abrev_pais\": \"DIN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"DJIBUTI\",\r\n        \"abrev_pais\": \"DJI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"DOMINICA\",\r\n        \"abrev_pais\": \"DOM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"EGITO\",\r\n        \"abrev_pais\": \"EGI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"EL SALVADOR\",\r\n        \"abrev_pais\": \"EL \"\r\n    },\r\n    {\r\n        \"nome_pais\": \"EMIRADOS ARABES UNIDOS\",\r\n        \"abrev_pais\": \"EMI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"EQUADOR\",\r\n        \"abrev_pais\": \"EQU\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ERITREIA\",\r\n        \"abrev_pais\": \"ERI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ESLOVAQUIA\",\r\n        \"abrev_pais\": \"ESL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ESLOVENIA\",\r\n        \"abrev_pais\": \"ESL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ESPANHA\",\r\n        \"abrev_pais\": \"ESP\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ESTADOS UNIDOS\",\r\n        \"abrev_pais\": \"EST\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ESTONIA\",\r\n        \"abrev_pais\": \"EST\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ETIOPIA\",\r\n        \"abrev_pais\": \"ETI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"FIJI\",\r\n        \"abrev_pais\": \"FIJ\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"FILIPINAS\",\r\n        \"abrev_pais\": \"FIL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"FINLANDIA\",\r\n        \"abrev_pais\": \"FIN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"FRANCA\",\r\n        \"abrev_pais\": \"FRA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"GABAO\",\r\n        \"abrev_pais\": \"GAB\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"GAMBIA\",\r\n        \"abrev_pais\": \"GAM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"GANA\",\r\n        \"abrev_pais\": \"GAN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"GEORGIA\",\r\n        \"abrev_pais\": \"GEO\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"GRANADA\",\r\n        \"abrev_pais\": \"GRA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"GRECIA\",\r\n        \"abrev_pais\": \"GRE\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"GUATEMALA\",\r\n        \"abrev_pais\": \"GUA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"GUIANA\",\r\n        \"abrev_pais\": \"GUI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"GUINE\",\r\n        \"abrev_pais\": \"GUI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"GUINE EQUATORIAL\",\r\n        \"abrev_pais\": \"GUI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"GUINE-BISSAU\",\r\n        \"abrev_pais\": \"GUI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"HAITI\",\r\n        \"abrev_pais\": \"HAI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"HONDURAS\",\r\n        \"abrev_pais\": \"HON\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"HUNGRIA\",\r\n        \"abrev_pais\": \"HUN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"IEMEN\",\r\n        \"abrev_pais\": \"IEM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ILHAS MARSHALL\",\r\n        \"abrev_pais\": \"ILH\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ILHAS SALOMAO\",\r\n        \"abrev_pais\": \"ILH\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"INDIA\",\r\n        \"abrev_pais\": \"IND\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"INDONESIA\",\r\n        \"abrev_pais\": \"IND\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"IRA\",\r\n        \"abrev_pais\": \"IRA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"IRAQUE\",\r\n        \"abrev_pais\": \"IRQ\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"IRLANDA\",\r\n        \"abrev_pais\": \"IRL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ISLANDIA\",\r\n        \"abrev_pais\": \"ISL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ISRAEL\",\r\n        \"abrev_pais\": \"ISR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ITALIA\",\r\n        \"abrev_pais\": \"ITA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"JAMAICA\",\r\n        \"abrev_pais\": \"JAM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"JAPAO\",\r\n        \"abrev_pais\": \"JAP\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"JORDANIA\",\r\n        \"abrev_pais\": \"JOR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"KOSOVO\",\r\n        \"abrev_pais\": \"KOS\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"KUWAIT\",\r\n        \"abrev_pais\": \"KUW\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"LAOS\",\r\n        \"abrev_pais\": \"LAO\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"LESOTO\",\r\n        \"abrev_pais\": \"LES\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"LETONIA\",\r\n        \"abrev_pais\": \"LET\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"LIBANO\",\r\n        \"abrev_pais\": \"LBN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"LIBERIA\",\r\n        \"abrev_pais\": \"LBR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"LIBIA\",\r\n        \"abrev_pais\": \"LIB\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"LIECHTENSTEIN\",\r\n        \"abrev_pais\": \"LIE\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"LITUANIA\",\r\n        \"abrev_pais\": \"LIT\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"LUXEMBURGO\",\r\n        \"abrev_pais\": \"LUX\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MACEDONIA DO NORTE\",\r\n        \"abrev_pais\": \"MAC\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MADAGASCAR\",\r\n        \"abrev_pais\": \"MAD\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MALASIA\",\r\n        \"abrev_pais\": \"MAL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MALAUI\",\r\n        \"abrev_pais\": \"MAL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MALDIVAS\",\r\n        \"abrev_pais\": \"MAL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MALI\",\r\n        \"abrev_pais\": \"MAL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MALTA\",\r\n        \"abrev_pais\": \"MAL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MARROCOS\",\r\n        \"abrev_pais\": \"MAR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MAURICIA\",\r\n        \"abrev_pais\": \"MAU\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MAURITANIA\",\r\n        \"abrev_pais\": \"MAU\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MEXICO\",\r\n        \"abrev_pais\": \"MEX\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MIANMAR\",\r\n        \"abrev_pais\": \"MIA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MICRONESIA\",\r\n        \"abrev_pais\": \"MIC\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MOCAMBIQUE\",\r\n        \"abrev_pais\": \"MOC\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MOLDAVIA\",\r\n        \"abrev_pais\": \"MOL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MONACO\",\r\n        \"abrev_pais\": \"MON\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MONGOLIA\",\r\n        \"abrev_pais\": \"MGL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"MONTENEGRO\",\r\n        \"abrev_pais\": \"MTG\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"NAMIBIA\",\r\n        \"abrev_pais\": \"NAM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"NAURU\",\r\n        \"abrev_pais\": \"NAU\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"NEPAL\",\r\n        \"abrev_pais\": \"NEP\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"NICARAGUA\",\r\n        \"abrev_pais\": \"NIC\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"NIGER\",\r\n        \"abrev_pais\": \"NGR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"NIGERIA\",\r\n        \"abrev_pais\": \"NIG\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"NORUEGA\",\r\n        \"abrev_pais\": \"NOR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"NOVA ZELANDIA\",\r\n        \"abrev_pais\": \"NOV\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"OMA\",\r\n        \"abrev_pais\": \"OMA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"PAISES BAIXOS\",\r\n        \"abrev_pais\": \"HOL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"PALAU\",\r\n        \"abrev_pais\": \"PAL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"PANAMA\",\r\n        \"abrev_pais\": \"PAN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"PAPUA NOVA GUINE\",\r\n        \"abrev_pais\": \"PAP\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"PAQUISTAO\",\r\n        \"abrev_pais\": \"PAQ\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"PARAGUAI\",\r\n        \"abrev_pais\": \"PAR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"PERU\",\r\n        \"abrev_pais\": \"PER\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"POLONIA\",\r\n        \"abrev_pais\": \"POL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"PORTUGAL\",\r\n        \"abrev_pais\": \"POR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"QUENIA\",\r\n        \"abrev_pais\": \"QUE\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"QUIRGUISTAO\",\r\n        \"abrev_pais\": \"QUI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"QUIRIBATI\",\r\n        \"abrev_pais\": \"QUR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"REINO UNIDO\",\r\n        \"abrev_pais\": \"REI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"REPUBLICA CENTRO-AFRICANA\",\r\n        \"abrev_pais\": \"RCA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"REPUBLICA DOMINICANA\",\r\n        \"abrev_pais\": \"RPD\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"REPUBLICA TCHECA\",\r\n        \"abrev_pais\": \"REP\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ROMENIA\",\r\n        \"abrev_pais\": \"ROM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"RUANDA\",\r\n        \"abrev_pais\": \"RUA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"RUSSIA\",\r\n        \"abrev_pais\": \"RUS\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SALVACAO\",\r\n        \"abrev_pais\": \"SAL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SAMOA\",\r\n        \"abrev_pais\": \"SAM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SAN MARINO\",\r\n        \"abrev_pais\": \"SAN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SANTA LUCIA\",\r\n        \"abrev_pais\": \"SAN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"S\\u00c3O CRISTOVAO E NEVIS\",\r\n        \"abrev_pais\": \"SAO\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"S\\u00c3O TOME E PRINCIPE\",\r\n        \"abrev_pais\": \"STP\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SAO VICENTE E GRANADINAS\",\r\n        \"abrev_pais\": \"SVG\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SEICHELES\",\r\n        \"abrev_pais\": \"SEI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SENEGAL\",\r\n        \"abrev_pais\": \"SEN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SERRA LEOA\",\r\n        \"abrev_pais\": \"SEL\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SERVIA\",\r\n        \"abrev_pais\": \"SER\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SINGAPURA\",\r\n        \"abrev_pais\": \"SIN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SIRIA\",\r\n        \"abrev_pais\": \"SIR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SOMALIA\",\r\n        \"abrev_pais\": \"SOM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SRI LANKA\",\r\n        \"abrev_pais\": \"SRI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SUDAO\",\r\n        \"abrev_pais\": \"SUD\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SUDAO DO SUL\",\r\n        \"abrev_pais\": \"SUD\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SUECIA\",\r\n        \"abrev_pais\": \"SUE\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SUICA\",\r\n        \"abrev_pais\": \"SUI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SURINAME\",\r\n        \"abrev_pais\": \"SUR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"SUAZILANDIA\",\r\n        \"abrev_pais\": \"SUA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"TAILANDIA\",\r\n        \"abrev_pais\": \"TAI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"TAIWAN\",\r\n        \"abrev_pais\": \"TWN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"TAJIQUISTAO\",\r\n        \"abrev_pais\": \"TAJ\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"TANZANIA\",\r\n        \"abrev_pais\": \"TAN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"TIMOR-LESTE\",\r\n        \"abrev_pais\": \"TIM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"TOGO\",\r\n        \"abrev_pais\": \"TOG\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"TONGA\",\r\n        \"abrev_pais\": \"TON\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"TRINDADE E TOBAGO\",\r\n        \"abrev_pais\": \"TRI\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"TUNISIA\",\r\n        \"abrev_pais\": \"TUN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"TURCOMENISTAO\",\r\n        \"abrev_pais\": \"TUR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"TURQUIA\",\r\n        \"abrev_pais\": \"TUR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"TUVALU\",\r\n        \"abrev_pais\": \"TUV\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"UCRANIA\",\r\n        \"abrev_pais\": \"UCR\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"UGANDA\",\r\n        \"abrev_pais\": \"UGA\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"URUGUAI\",\r\n        \"abrev_pais\": \"URU\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"USBEQUISTAO\",\r\n        \"abrev_pais\": \"USB\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"VANUATU\",\r\n        \"abrev_pais\": \"VAN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"VATICANO\",\r\n        \"abrev_pais\": \"VAT\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"VENEZUELA\",\r\n        \"abrev_pais\": \"VEN\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"VIETNA\",\r\n        \"abrev_pais\": \"VIE\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ZAMBIA\",\r\n        \"abrev_pais\": \"ZAM\"\r\n    },\r\n    {\r\n        \"nome_pais\": \"ZIMBABUE\",\r\n        \"abrev_pais\": \"ZIM\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/pais/cargaPaises",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pais",
+								"cargaPaises"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insere pais",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nome_pais\": \"NOVO PAIS\",\r\n        \"abrev_pais\": \"NVP\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/pais",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pais"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ESTADO",
+			"item": [
+				{
+					"name": "Carga de Estado",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"ACRE\",\r\n        \"uf\": \"AC\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"ALAGOAS\",\r\n        \"uf\": \"AL\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"AMAPA\",\r\n        \"uf\": \"AP\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"AMAZONAS\",\r\n        \"uf\": \"AM\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"BAHIA\",\r\n        \"uf\": \"BA\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"CEARA\",\r\n        \"uf\": \"CE\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"DISTRITO FEDERAL\",\r\n        \"uf\": \"DF\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"ESPIRITO SANTO\",\r\n        \"uf\": \"ES\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"GOIAS\",\r\n        \"uf\": \"GO\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"MARANHAO\",\r\n        \"uf\": \"MA\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"MATO GROSSO\",\r\n        \"uf\": \"MT\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"MATO GROSSO DO SUL\",\r\n        \"uf\": \"MS\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"MINAS GERAIS\",\r\n        \"uf\": \"MG\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"PARA\",\r\n        \"uf\": \"PA\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"PARAIBA\",\r\n        \"uf\": \"PB\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"PARANA\",\r\n        \"uf\": \"PR\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"PERNAMBUCO\",\r\n        \"uf\": \"PE\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"PIAUI\",\r\n        \"uf\": \"PI\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"RIO DE JANEIRO\",\r\n        \"uf\": \"RJ\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"RIO GRANDE DO NORTE\",\r\n        \"uf\": \"RN\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"RIO GRANDE DO SUL\",\r\n        \"uf\": \"RS\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"RONDONIA\",\r\n        \"uf\": \"RO\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"RORAIMA\",\r\n        \"uf\": \"RR\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"SANTA CATARINA\",\r\n        \"uf\": \"SC\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"SAO PAULO\",\r\n        \"uf\": \"SP\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"SERGIPE\",\r\n        \"uf\": \"SE\"\r\n    },\r\n    {\r\n        \"id_pais\": 26,\r\n        \"nome_estado\": \"TOCANTINS\",\r\n        \"uf\": \"TO\"\r\n    }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estado/cargaEstado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estado",
+								"cargaEstado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insere Estado",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id_pais\": 1,\r\n        \"nome_estado\": \"NOVO ESTADO\",\r\n        \"uf\": \"NE\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta Estado",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estado/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estado",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista Estados",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estado"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CIDADE",
+			"item": [
+				{
+					"name": "Carga de Cidades",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id_estado\": 10,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"RIO BRANCO\"\r\n    },\r\n    {\r\n        \"id_estado\": 10,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"CRUZEIRO DO SUL\"\r\n    },\r\n    {\r\n        \"id_estado\": 10,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"TARAUACA\"\r\n    },\r\n    {\r\n        \"id_estado\": 20,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"MACEIO\"\r\n    },\r\n    {\r\n        \"id_estado\": 20,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"ARAPIRACA\"\r\n    },\r\n    {\r\n        \"id_estado\": 20,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"RIO LARGO\"\r\n    },\r\n    {\r\n        \"id_estado\": 30,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"MACAPA\"\r\n    },\r\n    {\r\n        \"id_estado\": 30,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"SANTANA\"\r\n    },\r\n    {\r\n        \"id_estado\": 30,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"LARANJAL DO JARI\"\r\n    },\r\n    {\r\n        \"id_estado\": 40,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"MANAUS\"\r\n    },\r\n    {\r\n        \"id_estado\": 40,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"PARINTINS\"\r\n    },\r\n    {\r\n        \"id_estado\": 40,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"ITACOATIARA\"\r\n    },\r\n    {\r\n        \"id_estado\": 50,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"SALVADOR\"\r\n    },\r\n    {\r\n        \"id_estado\": 50,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"FEIRA DE SANTANA\"\r\n    },\r\n    {\r\n        \"id_estado\": 50,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"VITORIA DA CONQUISTA\"\r\n    },\r\n    {\r\n        \"id_estado\": 60,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"FORTALEZA\"\r\n    },\r\n    {\r\n        \"id_estado\": 60,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"CAUCAIA\"\r\n    },\r\n    {\r\n        \"id_estado\": 60,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"JUAZEIRO DO NORTE\"\r\n    },\r\n    {\r\n        \"id_estado\": 70,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"BRASILIA\"\r\n    },\r\n    {\r\n        \"id_estado\": 80,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"VITORIA\"\r\n    },\r\n    {\r\n        \"id_estado\": 80,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"VILA VELHA\"\r\n    },\r\n    {\r\n        \"id_estado\": 80,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"CARIACICA\"\r\n    },\r\n    {\r\n        \"id_estado\": 90,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"GOIANIA\"\r\n    },\r\n    {\r\n        \"id_estado\": 90,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"APARECIDA DE GOIANIA\"\r\n    },\r\n    {\r\n        \"id_estado\": 90,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"ANAPOLIS\"\r\n    },\r\n    {\r\n        \"id_estado\": 100,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"SAO LUIS\"\r\n    },\r\n    {\r\n        \"id_estado\": 100,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"IMPERATRIZ\"\r\n    },\r\n    {\r\n        \"id_estado\": 100,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"SAO JOSE DE RIBAMAR\"\r\n    },\r\n    {\r\n        \"id_estado\": 110,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"CUIABA\"\r\n    },\r\n    {\r\n        \"id_estado\": 110,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"VARZEA GRANDE\"\r\n    },\r\n    {\r\n        \"id_estado\": 110,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"RONDONOPOLIS\"\r\n    },\r\n    {\r\n        \"id_estado\": 120,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"CAMPO GRANDE\"\r\n    },\r\n    {\r\n        \"id_estado\": 120,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"DOURADOS\"\r\n    },\r\n    {\r\n        \"id_estado\": 120,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"TRES LAGOAS\"\r\n    },\r\n    {\r\n        \"id_estado\": 130,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"BELO HORIZONTE\"\r\n    },\r\n    {\r\n        \"id_estado\": 130,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"UBERLANDIA\"\r\n    },\r\n    {\r\n        \"id_estado\": 130,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"CONTAGEM\"\r\n    },\r\n    {\r\n        \"id_estado\": 140,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"BELEM\"\r\n    },\r\n    {\r\n        \"id_estado\": 140,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"ANANINDEUA\"\r\n    },\r\n    {\r\n        \"id_estado\": 140,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"SANTAREM\"\r\n    },\r\n    {\r\n        \"id_estado\": 150,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"JOAO PESSOA\"\r\n    },\r\n    {\r\n        \"id_estado\": 150,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"CAMPINA GRANDE\"\r\n    },\r\n    {\r\n        \"id_estado\": 150,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"SANTA RITA\"\r\n    },\r\n    {\r\n        \"id_estado\": 160,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"CURITIBA\"\r\n    },\r\n    {\r\n        \"id_estado\": 160,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"LONDRINA\"\r\n    },\r\n    {\r\n        \"id_estado\": 160,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"MARINGA\"\r\n    },\r\n    {\r\n        \"id_estado\": 170,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"RECIFE\"\r\n    },\r\n    {\r\n        \"id_estado\": 170,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"JABOATAO DOS GUARARAPES\"\r\n    },\r\n    {\r\n        \"id_estado\": 170,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"OLINDA\"\r\n    },\r\n    {\r\n        \"id_estado\": 180,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"TERESINA\"\r\n    },\r\n    {\r\n        \"id_estado\": 180,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"PARNAIBA\"\r\n    },\r\n    {\r\n        \"id_estado\": 180,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"PICOS\"\r\n    },\r\n    {\r\n        \"id_estado\": 190,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"RIO DE JANEIRO\"\r\n    },\r\n    {\r\n        \"id_estado\": 190,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"SAO GONCALO\"\r\n    },\r\n    {\r\n        \"id_estado\": 190,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"DUQUE DE CAXIAS\"\r\n    },\r\n    {\r\n        \"id_estado\": 200,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"NATAL\"\r\n    },\r\n    {\r\n        \"id_estado\": 200,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"MOSSORO\"\r\n    },\r\n    {\r\n        \"id_estado\": 200,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"PARNAMIRIM\"\r\n    },\r\n    {\r\n        \"id_estado\": 210,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"PORTO ALEGRE\"\r\n    },\r\n    {\r\n        \"id_estado\": 210,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"CAXIAS DO SUL\"\r\n    },\r\n    {\r\n        \"id_estado\": 210,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"CANOAS\"\r\n    },\r\n    {\r\n        \"id_estado\": 220,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"PORTO VELHO\"\r\n    },\r\n    {\r\n        \"id_estado\": 220,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"JI-PARANA\"\r\n    },\r\n    {\r\n        \"id_estado\": 220,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"ARIQUEMES\"\r\n    },\r\n    {\r\n        \"id_estado\": 230,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"BOA VISTA\"\r\n    },\r\n    {\r\n        \"id_estado\": 230,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"CARACARAI\"\r\n    },\r\n    {\r\n        \"id_estado\": 230,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"RORAINOPOLIS\"\r\n    },\r\n    {\r\n        \"id_estado\": 240,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"FLORIANOPOLIS\"\r\n    },\r\n    {\r\n        \"id_estado\": 240,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"JOINVILLE\"\r\n    },\r\n    {\r\n        \"id_estado\": 240,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"BLUMENAU\"\r\n    },\r\n    {\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"SAO PAULO\"\r\n    },\r\n    {\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"GUARULHOS\"\r\n    },\r\n    {\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"CAMPINAS\"\r\n    },\r\n    {\r\n        \"id_estado\": 260,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"ARACAJU\"\r\n    },\r\n    {\r\n        \"id_estado\": 260,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"NOSSA SENHORA DO SOCORRO\"\r\n    },\r\n    {\r\n        \"id_estado\": 260,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"LAGARTO\"\r\n    },\r\n    {\r\n        \"id_estado\": 270,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"PALMAS\"\r\n    },\r\n    {\r\n        \"id_estado\": 270,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"ARAGUAINA\"\r\n    },\r\n    {\r\n        \"id_estado\": 270,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"GURUPI\"\r\n    }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cidade/cargaCidade",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cidade",
+								"cargaCidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insere Cidade",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id_estado\": 10,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"RIO TESTE\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cidade",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cidade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta Cidade",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id_estado\": 10,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"RIO TESTE\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cidade/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cidade",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista Cidades",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id_estado\": 10,\r\n        \"id_pais\": 26,\r\n        \"nom_cidade\": \"RIO TESTE\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cidade",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cidade"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PESSOA",
+			"item": [
+				{
+					"name": "Consulta todas pessoas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/{{context}}/pessoa",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{context}}",
+								"pessoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta por CPF",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id_num_cpf\": 92723588092,\r\n        \"nome_pessoa\": \"JOAO CARLOS\",\r\n        \"data_nasc\": \"27121990\",\r\n        \"endereco\": \"RUA DOS ANDES\",\r\n        \"email\": \"JOAO@EMAIL.COM\",\r\n        \"ddd\": 11,\r\n        \"telefone\": 7987798,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 85237514081,\r\n        \"nome_pessoa\": \"MARIA SILVA\",\r\n        \"data_nasc\": \"15051985\",\r\n        \"endereco\": \"AVENIDA BRASIL\",\r\n        \"email\": \"MARIA@EMAIL.COM\",\r\n        \"ddd\": 21,\r\n        \"telefone\": 9876543,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 57186141056,\r\n        \"nome_pessoa\": \"CARLOS SANTOS\",\r\n        \"data_nasc\": \"03091978\",\r\n        \"endereco\": \"RUA DAS FLORES\",\r\n        \"email\": \"CARLOS@EMAIL.COM\",\r\n        \"ddd\": 31,\r\n        \"telefone\": 1234567,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 57131247030,\r\n        \"nome_pessoa\": \"ANA MARTINS\",\r\n        \"data_nasc\": \"20111995\",\r\n        \"endereco\": \"RUA DAS PALMEIRAS\",\r\n        \"email\": \"ANA@EMAIL.COM\",\r\n        \"ddd\": 41,\r\n        \"telefone\": 5555555,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 12531874011,\r\n        \"nome_pessoa\": \"PAULO PEREIRA\",\r\n        \"data_nasc\": \"10071980\",\r\n        \"endereco\": \"AVENIDA DAS AMERICAS\",\r\n        \"email\": \"PAULO@EMAIL.COM\",\r\n        \"ddd\": 11,\r\n        \"telefone\": 9999999,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 43504870001,\r\n        \"nome_pessoa\": \"LUCIA FERNANDES\",\r\n        \"data_nasc\": \"05031992\",\r\n        \"endereco\": \"RUA DOS PINHEIROS\",\r\n        \"email\": \"LUCIA@EMAIL.COM\",\r\n        \"ddd\": 51,\r\n        \"telefone\": 7777777,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 76881871090,\r\n        \"nome_pessoa\": \"FERNANDO OLIVEIRA\",\r\n        \"data_nasc\": \"18081987\",\r\n        \"endereco\": \"AVENIDA PAULISTA\",\r\n        \"email\": \"FERNANDO@EMAIL.COM\",\r\n        \"ddd\": 11,\r\n        \"telefone\": 2222222,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 47475584038,\r\n        \"nome_pessoa\": \"SILVIA RODRIGUES\",\r\n        \"data_nasc\": \"14121983\",\r\n        \"endereco\": \"RUA DO COMERCIO\",\r\n        \"email\": \"SILVIA@EMAIL.COM\",\r\n        \"ddd\": 71,\r\n        \"telefone\": 6666666,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 76050837007,\r\n        \"nome_pessoa\": \"RICARDO SANTANA\",\r\n        \"data_nasc\": \"07061998\",\r\n        \"endereco\": \"AVENIDA CENTRAL\",\r\n        \"email\": \"RICARDO@EMAIL.COM\",\r\n        \"ddd\": 61,\r\n        \"telefone\": 4444444,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 63000308067,\r\n        \"nome_pessoa\": \"MARCIA COSTA\",\r\n        \"data_nasc\": \"23091991\",\r\n        \"endereco\": \"RUA DAS LARANJEIRAS\",\r\n        \"email\": \"MARCIA@EMAIL.COM\",\r\n        \"ddd\": 62,\r\n        \"telefone\": 8888888,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 23429548080,\r\n        \"nome_pessoa\": \"ROBERTO FERREIRA\",\r\n        \"data_nasc\": \"29021996\",\r\n        \"endereco\": \"AVENIDA RIO BRANCO\",\r\n        \"email\": \"ROBERTO@EMAIL.COM\",\r\n        \"ddd\": 11,\r\n        \"telefone\": 1111111,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 23429548080,\r\n        \"nome_pessoa\": \"LUIZ GONCALVES\",\r\n        \"data_nasc\": \"16101984\",\r\n        \"endereco\": \"RUA DAS OLIVEIRAS\",\r\n        \"email\": \"LUIZ@EMAIL.COM\",\r\n        \"ddd\": 81,\r\n        \"telefone\": 3333333,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 23429548080,\r\n        \"nome_pessoa\": \"LUCIA FERNANDES\",\r\n        \"data_nasc\": \"05031992\",\r\n        \"endereco\": \"RUA DOS PINHEIROS\",\r\n        \"email\": \"LUCIA@EMAIL.COM\",\r\n        \"ddd\": 51,\r\n        \"telefone\": 7777777,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 99407997057,\r\n        \"nome_pessoa\": \"LUCIA FERNANDES\",\r\n        \"data_nasc\": \"05031992\",\r\n        \"endereco\": \"RUA DOS PINHEIROS\",\r\n        \"email\": \"LUCIA@EMAIL.COM\",\r\n        \"ddd\": 51,\r\n        \"telefone\": 7777777,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 1070,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    }\r\n]\r\n"
+						},
+						"url": {
+							"raw": "{{url}}/{{context}}/pessoa/57186141056",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"{{context}}",
+								"pessoa",
+								"57186141056"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Carga Pessoas",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"id_num_cpf\": 92723588092,\r\n        \"nome_pessoa\": \"JOAO CARLOS\",\r\n        \"data_nasc\": \"27121990\",\r\n        \"endereco\": \"RUA DOS ANDES\",\r\n        \"email\": \"JOAO@EMAIL.COM\",\r\n        \"ddd\": 11,\r\n        \"telefone\": 7987798,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 85237514081,\r\n        \"nome_pessoa\": \"MARIA SILVA\",\r\n        \"data_nasc\": \"15051985\",\r\n        \"endereco\": \"AVENIDA BRASIL\",\r\n        \"email\": \"MARIA@EMAIL.COM\",\r\n        \"ddd\": 21,\r\n        \"telefone\": 9876543,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 57186141056,\r\n        \"nome_pessoa\": \"CARLOS SANTOS\",\r\n        \"data_nasc\": \"03091978\",\r\n        \"endereco\": \"RUA DAS FLORES\",\r\n        \"email\": \"CARLOS@EMAIL.COM\",\r\n        \"ddd\": 31,\r\n        \"telefone\": 1234567,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 57131247030,\r\n        \"nome_pessoa\": \"ANA MARTINS\",\r\n        \"data_nasc\": \"20111995\",\r\n        \"endereco\": \"RUA DAS PALMEIRAS\",\r\n        \"email\": \"ANA@EMAIL.COM\",\r\n        \"ddd\": 41,\r\n        \"telefone\": 5555555,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 12531874011,\r\n        \"nome_pessoa\": \"PAULO PEREIRA\",\r\n        \"data_nasc\": \"10071980\",\r\n        \"endereco\": \"AVENIDA DAS AMERICAS\",\r\n        \"email\": \"PAULO@EMAIL.COM\",\r\n        \"ddd\": 11,\r\n        \"telefone\": 9999999,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 43504870001,\r\n        \"nome_pessoa\": \"LUCIA FERNANDES\",\r\n        \"data_nasc\": \"05031992\",\r\n        \"endereco\": \"RUA DOS PINHEIROS\",\r\n        \"email\": \"LUCIA@EMAIL.COM\",\r\n        \"ddd\": 51,\r\n        \"telefone\": 7777777,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 76881871090,\r\n        \"nome_pessoa\": \"FERNANDO OLIVEIRA\",\r\n        \"data_nasc\": \"18081987\",\r\n        \"endereco\": \"AVENIDA PAULISTA\",\r\n        \"email\": \"FERNANDO@EMAIL.COM\",\r\n        \"ddd\": 11,\r\n        \"telefone\": 2222222,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 47475584038,\r\n        \"nome_pessoa\": \"SILVIA RODRIGUES\",\r\n        \"data_nasc\": \"14121983\",\r\n        \"endereco\": \"RUA DO COMERCIO\",\r\n        \"email\": \"SILVIA@EMAIL.COM\",\r\n        \"ddd\": 71,\r\n        \"telefone\": 6666666,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 76050837007,\r\n        \"nome_pessoa\": \"RICARDO SANTANA\",\r\n        \"data_nasc\": \"07061998\",\r\n        \"endereco\": \"AVENIDA CENTRAL\",\r\n        \"email\": \"RICARDO@EMAIL.COM\",\r\n        \"ddd\": 61,\r\n        \"telefone\": 4444444,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 63000308067,\r\n        \"nome_pessoa\": \"MARCIA COSTA\",\r\n        \"data_nasc\": \"23091991\",\r\n        \"endereco\": \"RUA DAS LARANJEIRAS\",\r\n        \"email\": \"MARCIA@EMAIL.COM\",\r\n        \"ddd\": 62,\r\n        \"telefone\": 8888888,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 23429548080,\r\n        \"nome_pessoa\": \"ROBERTO FERREIRA\",\r\n        \"data_nasc\": \"29021996\",\r\n        \"endereco\": \"AVENIDA RIO BRANCO\",\r\n        \"email\": \"ROBERTO@EMAIL.COM\",\r\n        \"ddd\": 11,\r\n        \"telefone\": 1111111,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 23429548080,\r\n        \"nome_pessoa\": \"LUIZ GONCALVES\",\r\n        \"data_nasc\": \"16101984\",\r\n        \"endereco\": \"RUA DAS OLIVEIRAS\",\r\n        \"email\": \"LUIZ@EMAIL.COM\",\r\n        \"ddd\": 81,\r\n        \"telefone\": 3333333,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 23429548080,\r\n        \"nome_pessoa\": \"LUCIA FERNANDES\",\r\n        \"data_nasc\": \"05031992\",\r\n        \"endereco\": \"RUA DOS PINHEIROS\",\r\n        \"email\": \"LUCIA@EMAIL.COM\",\r\n        \"ddd\": 51,\r\n        \"telefone\": 7777777,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"id_num_cpf\": 99407997057,\r\n        \"nome_pessoa\": \"LUCIA FERNANDES\",\r\n        \"data_nasc\": \"05031992\",\r\n        \"endereco\": \"RUA DOS PINHEIROS\",\r\n        \"email\": \"LUCIA@EMAIL.COM\",\r\n        \"ddd\": 51,\r\n        \"telefone\": 7777777,\r\n        \"genero\": \"M\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/pessoa/cargaPessoas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pessoa",
+								"cargaPessoas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insere Pessoa",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id_num_cpf\": 69745881007,\r\n        \"nome_pessoa\": \"TESTE CARLOS\",\r\n        \"data_nasc\": \"27121990\",\r\n        \"endereco\": \"RUA DOS ANDES\",\r\n        \"email\": \"JOAO@EMAIL.COM\",\r\n        \"ddd\": 11,\r\n        \"telefone\": 7987798,\r\n        \"genero\": \"F\",\r\n        \"id_time\": 5,\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/pessoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"pessoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta CPF",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/delete/85237514081",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"delete",
+								"85237514081"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TIME",
+			"item": [
+				{
+					"name": "Carga de Times",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"nome_time\": \"São Paulo FC\",\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"nome_time\": \"Palmeiras\",\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"nome_time\": \"Corinthians\",\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"nome_time\": \"Santos FC\",\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"nome_time\": \"Portuguesa\",\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"nome_time\": \"Juventus\",\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"nome_time\": \"Bragantino\",\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"nome_time\": \"Ponte Preta\",\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"nome_time\": \"São Caetano\",\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    },\r\n    {\r\n        \"nome_time\": \"Audax\",\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/time/cargaTimes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"time",
+								"cargaTimes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insere Time",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nome_time\": \"Tabajara\",\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/time",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"time"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta Time",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nome_time\": \"Tabajara\",\r\n        \"id_cidade\": 71,\r\n        \"id_estado\": 250,\r\n        \"id_pais\": 26\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/time/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"time",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista Times",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/time",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"time"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OCORRENCIA",
+			"item": [
+				{
+					"name": "Consulta Bloqueio Torcedor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ocorrencia/bloqueio/99407997057",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ocorrencia",
+								"bloqueio",
+								"99407997057"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insere Ocorrencia",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_num_cpf\": 76881871090, \r\n    \"data_hora\": \"2023-10-15T15:41:44\",\r\n    \"desc_local\": \"RUA ALAMEDA\",\r\n    \"desc_ocorrencia\": \"ROUBO\",\r\n    \"id_medida\": 2,\r\n    \"data_ini\": \"2022-10-01T00:00:00\",\r\n    \"data_fim\": \"2023-10-01T00:00:00\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/ocorrencia/insereOcorrencia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ocorrencia",
+								"insereOcorrencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta Ocorrencia",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_num_cpf\": 76881871090, \r\n    \"data_hora\": \"2023-10-15T15:41:44\",\r\n    \"desc_local\": \"RUA ALAMEDA\",\r\n    \"desc_ocorrencia\": \"ROUBO\",\r\n    \"id_medida\": 2,\r\n    \"data_ini\": \"2022-10-01T00:00:00\",\r\n    \"data_fim\": \"2023-10-01T00:00:00\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/ocorrencia/99407997057",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ocorrencia",
+								"99407997057"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleta Ocorrencia",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "@Da1990",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "danilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/delete/92723588092/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"delete",
+								"92723588092",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "@Da1990",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "danilo",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
