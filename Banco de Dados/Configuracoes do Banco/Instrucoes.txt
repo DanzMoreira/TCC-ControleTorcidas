@@ -1,0 +1,36 @@
+Jogar os 3 arquivos em:
+C:\app\115112631\product\21c\homes\OraDB21Home1\network\admin
+
+
+Diretorio de instalacao do oracle: C:\app\115112631\product\21c\dbhomeXE
+
+caminho dos arquivos de tns e listener
+C:\app\115112631\product\21c\homes\OraDB21Home1\network\admin\listener.ora
+
+
+start listener
+cd C:\app\115112631\product\21c\dbhomeXE\bin
+lsnrctl start
+
+Start banco
+net start OracleServiceXE
+
+conectar como sysdba
+sqlplus sys as sysdba
+
+Interrompero Banco
+shutdown normal
+
+parar o Listener
+lsnrctl stop
+
+
+conectar pelo sqlplus 
+C:\app\115112631\product\21c\dbhomeXE\bin>sqlplus
+
+=================================================
+schema 
+
+CREATE USER "OWNER_TCC" IDENTIFIED BY "123"; 
+
+GRANT CREATE SESSION, CREATE TABLE, CREATE VIEW, CREATE PROCEDURE TO "OWNER_TCC";

@@ -1,0 +1,6 @@
+    {
+        "nome_time": "Tabajara",
+        "id_cidade": 71,
+        "id_estado": 250,
+        "id_pais": 26
+    }

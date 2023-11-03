@@ -1,0 +1,46 @@
+CREATE TABLE owner_tcc.cidade (
+    id_cidade  NUMBER(4) DEFAULT "OWNER_TCC"."SEQ_CIDADE"."NEXTVAL" NOT NULL,
+    id_estado  NUMBER(4),
+    id_pais    NUMBER,
+    nom_cidade VARCHAR2(30 BYTE) NOT NULL
+)
+PCTFREE 10 PCTUSED 40 TABLESPACE users LOGGING
+    STORAGE ( INITIAL 65536 NEXT 1048576 PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS 2147483645 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT
+    )
+NO INMEMORY;
+
+COMMENT ON COLUMN owner_tcc.cidade.id_cidade IS
+    'identificador da cidade';
+
+COMMENT ON COLUMN owner_tcc.cidade.id_estado IS
+    'identificador do estado';
+
+COMMENT ON COLUMN owner_tcc.cidade.id_pais IS
+    'identificador do pais
+';
+
+COMMENT ON COLUMN owner_tcc.cidade.nom_cidade IS
+    'nome da cidade';
+
+CREATE UNIQUE INDEX owner_tcc.pk_cidade ON
+    owner_tcc.cidade (
+        id_cidade
+    ASC )
+        TABLESPACE users PCTFREE 10
+            STORAGE ( INITIAL 65536 NEXT 1048576 PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS 2147483645 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL
+            DEFAULT )
+        LOGGING;
+
+ALTER TABLE owner_tcc.cidade
+    ADD CONSTRAINT pk_cidade PRIMARY KEY ( id_cidade )
+        USING INDEX owner_tcc.pk_cidade;
+
+ALTER TABLE owner_tcc.cidade
+    ADD CONSTRAINT cidade_fk_estado FOREIGN KEY ( id_estado )
+        REFERENCES owner_tcc.estado ( id_estado )
+    NOT DEFERRABLE;
+
+ALTER TABLE owner_tcc.cidade
+    ADD CONSTRAINT cidade_fk_pais FOREIGN KEY ( id_pais )
+        REFERENCES owner_tcc.pais ( id_pais )
+    NOT DEFERRABLE;

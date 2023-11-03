@@ -1,0 +1,97 @@
+CREATE TABLE owner_tcc.ocorrencia (
+    id_ocorrencia   NUMBER(3) NOT NULL,
+    id_num_cpf      NUMBER(11) NOT NULL,
+    data_hora       DATE NOT NULL,
+    desc_local      VARCHAR2(50 BYTE) NOT NULL,
+    desc_ocorrencia VARCHAR2(50 BYTE) NOT NULL,
+    id_medida       NUMBER(4),
+    data_ini        DATE NOT NULL,
+    data_fim        DATE NOT NULL
+)
+PCTFREE 10 PCTUSED 40 TABLESPACE users LOGGING
+    STORAGE ( INITIAL 65536 NEXT 1048576 PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS 2147483645 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT
+    )
+NO INMEMORY;
+
+COMMENT ON COLUMN owner_tcc.ocorrencia.id_ocorrencia IS
+    'Identificador Unico da Ocorencia';
+
+COMMENT ON COLUMN owner_tcc.ocorrencia.id_num_cpf IS
+    'cpf do torcedor';
+
+COMMENT ON COLUMN owner_tcc.ocorrencia.data_hora IS
+    'data da ocorrencia';
+
+COMMENT ON COLUMN owner_tcc.ocorrencia.desc_local IS
+    'Local da ocorrencia';
+
+COMMENT ON COLUMN owner_tcc.ocorrencia.desc_ocorrencia IS
+    'Descricao ocorrencia';
+
+COMMENT ON COLUMN owner_tcc.ocorrencia.id_medida IS
+    'codigo da medida aplicada';
+
+COMMENT ON COLUMN owner_tcc.ocorrencia.data_ini IS
+    'data inicio da medida aplicada';
+
+COMMENT ON COLUMN owner_tcc.ocorrencia.data_fim IS
+    'data fim da medida aplicada';
+
+CREATE UNIQUE INDEX owner_tcc.pk_ocorrencia ON
+    owner_tcc.ocorrencia (
+        id_ocorrencia
+    ASC,
+        id_num_cpf
+    ASC )
+        TABLESPACE users PCTFREE 10
+            STORAGE ( INITIAL 65536 NEXT 1048576 PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS 2147483645 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL
+            DEFAULT )
+        LOGGING;
+
+ALTER TABLE owner_tcc.ocorrencia
+    ADD CONSTRAINT pk_ocorrencia PRIMARY KEY ( id_ocorrencia,
+                                               id_num_cpf )
+        USING INDEX owner_tcc.pk_ocorrencia;
+
+ALTER TABLE owner_tcc.ocorrencia
+    ADD CONSTRAINT fk_ocorrencia_pessoa FOREIGN KEY ( id_num_cpf )
+        REFERENCES owner_tcc.pessoa ( id_num_cpf )
+    NOT DEFERRABLE;
+
+ALTER TABLE owner_tcc.ocorrencia
+    ADD CONSTRAINT fk_ocorrencia_tp_medida FOREIGN KEY ( id_medida )
+        REFERENCES owner_tcc.tipo_medida ( id_medida )
+    NOT DEFERRABLE;
+
+CREATE OR REPLACE TRIGGER owner_tcc.trg_ocorrencia BEFORE
+    INSERT ON owner_tcc.ocorrencia
+    FOR EACH ROW
+DECLARE
+    v_seq NUMBER(4) := NULL;
+BEGIN
+    BEGIN
+        SELECT
+            o.id_ocorrencia
+        INTO v_seq
+        FROM
+            ocorrencia o
+        WHERE
+                o.id_num_cpf = :new.id_num_cpf
+            AND id_ocorrencia = (
+                SELECT
+                    MAX(oo.id_ocorrencia)
+                FROM
+                    ocorrencia oo
+                WHERE
+                    oo.id_num_cpf = o.id_num_cpf
+            );
+
+    EXCEPTION
+        WHEN no_data_found THEN
+            v_seq := 0;
+    END;     
+  --
+    :new.id_ocorrencia := v_seq + 1;
+  --
+END;
+/

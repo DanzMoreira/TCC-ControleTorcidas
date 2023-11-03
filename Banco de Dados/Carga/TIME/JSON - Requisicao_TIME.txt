@@ -1,0 +1,62 @@
+[
+    {
+        "nome_time": "São Paulo FC",
+        "id_cidade": 71,
+        "id_estado": 250,
+        "id_pais": 26
+    },
+    {
+        "nome_time": "Palmeiras",
+        "id_cidade": 71,
+        "id_estado": 250,
+        "id_pais": 26
+    },
+    {
+        "nome_time": "Corinthians",
+        "id_cidade": 71,
+        "id_estado": 250,
+        "id_pais": 26
+    },
+    {
+        "nome_time": "Santos FC",
+        "id_cidade": 71,
+        "id_estado": 250,
+        "id_pais": 26
+    },
+    {
+        "nome_time": "Portuguesa",
+        "id_cidade": 71,
+        "id_estado": 250,
+        "id_pais": 26
+    },
+    {
+        "nome_time": "Juventus",
+        "id_cidade": 71,
+        "id_estado": 250,
+        "id_pais": 26
+    },
+    {
+        "nome_time": "Bragantino",
+        "id_cidade": 71,
+        "id_estado": 250,
+        "id_pais": 26
+    },
+    {
+        "nome_time": "Ponte Preta",
+        "id_cidade": 71,
+        "id_estado": 250,
+        "id_pais": 26
+    },
+    {
+        "nome_time": "São Caetano",
+        "id_cidade": 71,
+        "id_estado": 250,
+        "id_pais": 26
+    },
+    {
+        "nome_time": "Audax",
+        "id_cidade": 71,
+        "id_estado": 250,
+        "id_pais": 26
+    }
+]

@@ -1,0 +1,28 @@
+CREATE TABLE owner_tcc.pais (
+    id_pais    NUMBER(4) DEFAULT "OWNER_TCC"."SEQ_PAIS"."NEXTVAL" NOT NULL,
+    nome_pais  VARCHAR2(50 BYTE) NOT NULL,
+    abrev_pais VARCHAR2(3 BYTE) NOT NULL
+)
+PCTFREE 10 PCTUSED 40 TABLESPACE users LOGGING
+    STORAGE ( INITIAL 65536 NEXT 1048576 PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS 2147483645 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT
+    )
+NO INMEMORY;
+
+COMMENT ON COLUMN owner_tcc.pais.nome_pais IS
+    'nome pais';
+
+COMMENT ON COLUMN owner_tcc.pais.abrev_pais IS
+    'abreviacao do pais';
+
+CREATE UNIQUE INDEX owner_tcc.pk_pais ON
+    owner_tcc.pais (
+        id_pais
+    ASC )
+        TABLESPACE users PCTFREE 10
+            STORAGE ( INITIAL 65536 NEXT 1048576 PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS 2147483645 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL
+            DEFAULT )
+        LOGGING;
+
+ALTER TABLE owner_tcc.pais
+    ADD CONSTRAINT pk_pais PRIMARY KEY ( id_pais )
+        USING INDEX owner_tcc.pk_pais;

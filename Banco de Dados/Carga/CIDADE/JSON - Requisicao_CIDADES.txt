@@ -1,0 +1,5 @@
+    {
+        "id_estado": 10,
+        "id_pais": 26,
+        "nom_cidade": "RIO TESTE"
+    }

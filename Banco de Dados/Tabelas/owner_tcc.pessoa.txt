@@ -1,0 +1,87 @@
+CREATE TABLE owner_tcc.pessoa (
+    id_num_cpf  NUMBER(11) NOT NULL,
+    nome_pessoa VARCHAR2(50 BYTE) NOT NULL,
+    data_nasc   DATE,
+    endereco    VARCHAR2(30 BYTE),
+    email       VARCHAR2(25 BYTE),
+    ddd         NUMBER(3),
+    telefone    NUMBER(9),
+    genero      VARCHAR2(1 BYTE) NOT NULL,
+    id_time     NUMBER(4),
+    id_cidade   NUMBER(4),
+    id_estado   NUMBER(4),
+    id_pais     NUMBER(4)
+)
+PCTFREE 10 PCTUSED 40 TABLESPACE users LOGGING
+    STORAGE ( INITIAL 65536 NEXT 1048576 PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS 2147483645 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT
+    )
+NO INMEMORY;
+
+COMMENT ON COLUMN owner_tcc.pessoa.id_num_cpf IS
+    'cpf';
+
+COMMENT ON COLUMN owner_tcc.pessoa.nome_pessoa IS
+    'nome torcedor';
+
+COMMENT ON COLUMN owner_tcc.pessoa.data_nasc IS
+    'data de nascimento';
+
+COMMENT ON COLUMN owner_tcc.pessoa.endereco IS
+    'endereco';
+
+COMMENT ON COLUMN owner_tcc.pessoa.email IS
+    'email';
+
+COMMENT ON COLUMN owner_tcc.pessoa.ddd IS
+    'codigo de area';
+
+COMMENT ON COLUMN owner_tcc.pessoa.telefone IS
+    'telefone';
+
+COMMENT ON COLUMN owner_tcc.pessoa.genero IS
+    'genero';
+
+COMMENT ON COLUMN owner_tcc.pessoa.id_time IS
+    'identificador do time ';
+
+COMMENT ON COLUMN owner_tcc.pessoa.id_cidade IS
+    'identificador da cidade';
+
+COMMENT ON COLUMN owner_tcc.pessoa.id_estado IS
+    'identificador do estado';
+
+COMMENT ON COLUMN owner_tcc.pessoa.id_pais IS
+    'identificador do pais';
+
+CREATE UNIQUE INDEX owner_tcc.pk_pessoa ON
+    owner_tcc.pessoa (
+        id_num_cpf
+    ASC )
+        TABLESPACE users PCTFREE 10
+            STORAGE ( INITIAL 65536 NEXT 1048576 PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS 2147483645 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL
+            DEFAULT )
+        LOGGING;
+
+ALTER TABLE owner_tcc.pessoa
+    ADD CONSTRAINT pk_pessoa PRIMARY KEY ( id_num_cpf )
+        USING INDEX owner_tcc.pk_pessoa;
+
+ALTER TABLE owner_tcc.pessoa
+    ADD CONSTRAINT pessoa_fk_cidade FOREIGN KEY ( id_cidade )
+        REFERENCES owner_tcc.cidade ( id_cidade )
+    NOT DEFERRABLE;
+
+ALTER TABLE owner_tcc.pessoa
+    ADD CONSTRAINT pessoa_fk_estado FOREIGN KEY ( id_estado )
+        REFERENCES owner_tcc.estado ( id_estado )
+    NOT DEFERRABLE;
+
+ALTER TABLE owner_tcc.pessoa
+    ADD CONSTRAINT pessoa_fk_pais FOREIGN KEY ( id_pais )
+        REFERENCES owner_tcc.pais ( id_pais )
+    NOT DEFERRABLE;
+
+ALTER TABLE owner_tcc.pessoa
+    ADD CONSTRAINT pessoa_fk_time FOREIGN KEY ( id_time )
+        REFERENCES owner_tcc.time ( id_time )
+    NOT DEFERRABLE;

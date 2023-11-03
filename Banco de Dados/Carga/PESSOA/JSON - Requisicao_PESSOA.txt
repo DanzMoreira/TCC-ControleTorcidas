@@ -1,0 +1,14 @@
+{
+        "id_num_cpf": 69745881007,
+        "nome_pessoa": "TESTE CARLOS",
+        "data_nasc": "27121990",
+        "endereco": "RUA DOS ANDES",
+        "email": "JOAO@EMAIL.COM",
+        "ddd": 11,
+        "telefone": 7987798,
+        "genero": "F",
+        "id_time": 5,
+        "id_cidade": 71,
+        "id_estado": 250,
+        "id_pais": 26
+    }

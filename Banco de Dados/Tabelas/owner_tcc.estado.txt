@@ -1,0 +1,40 @@
+CREATE TABLE owner_tcc.estado (
+    id_estado   NUMBER(4) DEFAULT "OWNER_TCC"."SEQ_ESTADO"."NEXTVAL" NOT NULL,
+    id_pais     NUMBER(4),
+    nome_estado VARCHAR2(20 BYTE) NOT NULL,
+    uf          VARCHAR2(2 BYTE) NOT NULL
+)
+PCTFREE 10 PCTUSED 40 TABLESPACE users LOGGING
+    STORAGE ( INITIAL 65536 NEXT 1048576 PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS 2147483645 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT
+    )
+NO INMEMORY;
+
+COMMENT ON COLUMN owner_tcc.estado.id_estado IS
+    'identificador do estado';
+
+COMMENT ON COLUMN owner_tcc.estado.id_pais IS
+    'identificador do pais';
+
+COMMENT ON COLUMN owner_tcc.estado.nome_estado IS
+    'nome do estado';
+
+COMMENT ON COLUMN owner_tcc.estado.uf IS
+    'sigla que identifica o estado';
+
+CREATE UNIQUE INDEX owner_tcc.pk_estado ON
+    owner_tcc.estado (
+        id_estado
+    ASC )
+        TABLESPACE users PCTFREE 10
+            STORAGE ( INITIAL 65536 NEXT 1048576 PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS 2147483645 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL
+            DEFAULT )
+        LOGGING;
+
+ALTER TABLE owner_tcc.estado
+    ADD CONSTRAINT pk_estado PRIMARY KEY ( id_estado )
+        USING INDEX owner_tcc.pk_estado;
+
+ALTER TABLE owner_tcc.estado
+    ADD CONSTRAINT estado_fk_pais FOREIGN KEY ( id_pais )
+        REFERENCES owner_tcc.pais ( id_pais )
+    NOT DEFERRABLE;

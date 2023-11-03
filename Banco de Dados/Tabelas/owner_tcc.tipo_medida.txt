@@ -1,0 +1,25 @@
+CREATE TABLE owner_tcc.tipo_medida (
+    id_medida NUMBER(1) NOT NULL,
+    natureza  VARCHAR2(20) NOT NULL
+)
+PCTFREE 10 PCTUSED 40 TABLESPACE users LOGGING
+    STORAGE ( PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS UNLIMITED FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT )
+NO INMEMORY;
+
+COMMENT ON COLUMN owner_tcc.tipo_medida.id_medida IS
+    'identificador de medida disciplinar';
+
+COMMENT ON COLUMN owner_tcc.tipo_medida.natureza IS
+    'natureza da infracao';
+
+CREATE UNIQUE INDEX owner_tcc.pk_tipo_medida ON
+    owner_tcc.tipo_medida (
+        id_medida
+    ASC )
+        TABLESPACE users PCTFREE 10
+            STORAGE ( PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS UNLIMITED FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT )
+        LOGGING;
+
+ALTER TABLE owner_tcc.tipo_medida
+    ADD CONSTRAINT pk_tipo_medida PRIMARY KEY ( id_medida )
+        USING INDEX owner_tcc.pk_tipo_medida;

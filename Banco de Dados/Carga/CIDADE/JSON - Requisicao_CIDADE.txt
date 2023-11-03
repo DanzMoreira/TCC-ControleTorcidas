@@ -1,0 +1,397 @@
+[
+    {
+        "id_estado": 10,
+        "id_pais": 26,
+        "nom_cidade": "RIO BRANCO"
+    },
+    {
+        "id_estado": 10,
+        "id_pais": 26,
+        "nom_cidade": "CRUZEIRO DO SUL"
+    },
+    {
+        "id_estado": 10,
+        "id_pais": 26,
+        "nom_cidade": "TARAUACA"
+    },
+    {
+        "id_estado": 20,
+        "id_pais": 26,
+        "nom_cidade": "MACEIO"
+    },
+    {
+        "id_estado": 20,
+        "id_pais": 26,
+        "nom_cidade": "ARAPIRACA"
+    },
+    {
+        "id_estado": 20,
+        "id_pais": 26,
+        "nom_cidade": "RIO LARGO"
+    },
+    {
+        "id_estado": 30,
+        "id_pais": 26,
+        "nom_cidade": "MACAPA"
+    },
+    {
+        "id_estado": 30,
+        "id_pais": 26,
+        "nom_cidade": "SANTANA"
+    },
+    {
+        "id_estado": 30,
+        "id_pais": 26,
+        "nom_cidade": "LARANJAL DO JARI"
+    },
+    {
+        "id_estado": 40,
+        "id_pais": 26,
+        "nom_cidade": "MANAUS"
+    },
+    {
+        "id_estado": 40,
+        "id_pais": 26,
+        "nom_cidade": "PARINTINS"
+    },
+    {
+        "id_estado": 40,
+        "id_pais": 26,
+        "nom_cidade": "ITACOATIARA"
+    },
+    {
+        "id_estado": 50,
+        "id_pais": 26,
+        "nom_cidade": "SALVADOR"
+    },
+    {
+        "id_estado": 50,
+        "id_pais": 26,
+        "nom_cidade": "FEIRA DE SANTANA"
+    },
+    {
+        "id_estado": 50,
+        "id_pais": 26,
+        "nom_cidade": "VITORIA DA CONQUISTA"
+    },
+    {
+        "id_estado": 60,
+        "id_pais": 26,
+        "nom_cidade": "FORTALEZA"
+    },
+    {
+        "id_estado": 60,
+        "id_pais": 26,
+        "nom_cidade": "CAUCAIA"
+    },
+    {
+        "id_estado": 60,
+        "id_pais": 26,
+        "nom_cidade": "JUAZEIRO DO NORTE"
+    },
+    {
+        "id_estado": 70,
+        "id_pais": 26,
+        "nom_cidade": "BRASILIA"
+    },
+    {
+        "id_estado": 80,
+        "id_pais": 26,
+        "nom_cidade": "VITORIA"
+    },
+    {
+        "id_estado": 80,
+        "id_pais": 26,
+        "nom_cidade": "VILA VELHA"
+    },
+    {
+        "id_estado": 80,
+        "id_pais": 26,
+        "nom_cidade": "CARIACICA"
+    },
+    {
+        "id_estado": 90,
+        "id_pais": 26,
+        "nom_cidade": "GOIANIA"
+    },
+    {
+        "id_estado": 90,
+        "id_pais": 26,
+        "nom_cidade": "APARECIDA DE GOIANIA"
+    },
+    {
+        "id_estado": 90,
+        "id_pais": 26,
+        "nom_cidade": "ANAPOLIS"
+    },
+    {
+        "id_estado": 100,
+        "id_pais": 26,
+        "nom_cidade": "SAO LUIS"
+    },
+    {
+        "id_estado": 100,
+        "id_pais": 26,
+        "nom_cidade": "IMPERATRIZ"
+    },
+    {
+        "id_estado": 100,
+        "id_pais": 26,
+        "nom_cidade": "SAO JOSE DE RIBAMAR"
+    },
+    {
+        "id_estado": 110,
+        "id_pais": 26,
+        "nom_cidade": "CUIABA"
+    },
+    {
+        "id_estado": 110,
+        "id_pais": 26,
+        "nom_cidade": "VARZEA GRANDE"
+    },
+    {
+        "id_estado": 110,
+        "id_pais": 26,
+        "nom_cidade": "RONDONOPOLIS"
+    },
+    {
+        "id_estado": 120,
+        "id_pais": 26,
+        "nom_cidade": "CAMPO GRANDE"
+    },
+    {
+        "id_estado": 120,
+        "id_pais": 26,
+        "nom_cidade": "DOURADOS"
+    },
+    {
+        "id_estado": 120,
+        "id_pais": 26,
+        "nom_cidade": "TRES LAGOAS"
+    },
+    {
+        "id_estado": 130,
+        "id_pais": 26,
+        "nom_cidade": "BELO HORIZONTE"
+    },
+    {
+        "id_estado": 130,
+        "id_pais": 26,
+        "nom_cidade": "UBERLANDIA"
+    },
+    {
+        "id_estado": 130,
+        "id_pais": 26,
+        "nom_cidade": "CONTAGEM"
+    },
+    {
+        "id_estado": 140,
+        "id_pais": 26,
+        "nom_cidade": "BELEM"
+    },
+    {
+        "id_estado": 140,
+        "id_pais": 26,
+        "nom_cidade": "ANANINDEUA"
+    },
+    {
+        "id_estado": 140,
+        "id_pais": 26,
+        "nom_cidade": "SANTAREM"
+    },
+    {
+        "id_estado": 150,
+        "id_pais": 26,
+        "nom_cidade": "JOAO PESSOA"
+    },
+    {
+        "id_estado": 150,
+        "id_pais": 26,
+        "nom_cidade": "CAMPINA GRANDE"
+    },
+    {
+        "id_estado": 150,
+        "id_pais": 26,
+        "nom_cidade": "SANTA RITA"
+    },
+    {
+        "id_estado": 160,
+        "id_pais": 26,
+        "nom_cidade": "CURITIBA"
+    },
+    {
+        "id_estado": 160,
+        "id_pais": 26,
+        "nom_cidade": "LONDRINA"
+    },
+    {
+        "id_estado": 160,
+        "id_pais": 26,
+        "nom_cidade": "MARINGA"
+    },
+    {
+        "id_estado": 170,
+        "id_pais": 26,
+        "nom_cidade": "RECIFE"
+    },
+    {
+        "id_estado": 170,
+        "id_pais": 26,
+        "nom_cidade": "JABOATAO DOS GUARARAPES"
+    },
+    {
+        "id_estado": 170,
+        "id_pais": 26,
+        "nom_cidade": "OLINDA"
+    },
+    {
+        "id_estado": 180,
+        "id_pais": 26,
+        "nom_cidade": "TERESINA"
+    },
+    {
+        "id_estado": 180,
+        "id_pais": 26,
+        "nom_cidade": "PARNAIBA"
+    },
+    {
+        "id_estado": 180,
+        "id_pais": 26,
+        "nom_cidade": "PICOS"
+    },
+    {
+        "id_estado": 190,
+        "id_pais": 26,
+        "nom_cidade": "RIO DE JANEIRO"
+    },
+    {
+        "id_estado": 190,
+        "id_pais": 26,
+        "nom_cidade": "SAO GONCALO"
+    },
+    {
+        "id_estado": 190,
+        "id_pais": 26,
+        "nom_cidade": "DUQUE DE CAXIAS"
+    },
+    {
+        "id_estado": 200,
+        "id_pais": 26,
+        "nom_cidade": "NATAL"
+    },
+    {
+        "id_estado": 200,
+        "id_pais": 26,
+        "nom_cidade": "MOSSORO"
+    },
+    {
+        "id_estado": 200,
+        "id_pais": 26,
+        "nom_cidade": "PARNAMIRIM"
+    },
+    {
+        "id_estado": 210,
+        "id_pais": 26,
+        "nom_cidade": "PORTO ALEGRE"
+    },
+    {
+        "id_estado": 210,
+        "id_pais": 26,
+        "nom_cidade": "CAXIAS DO SUL"
+    },
+    {
+        "id_estado": 210,
+        "id_pais": 26,
+        "nom_cidade": "CANOAS"
+    },
+    {
+        "id_estado": 220,
+        "id_pais": 26,
+        "nom_cidade": "PORTO VELHO"
+    },
+    {
+        "id_estado": 220,
+        "id_pais": 26,
+        "nom_cidade": "JI-PARANA"
+    },
+    {
+        "id_estado": 220,
+        "id_pais": 26,
+        "nom_cidade": "ARIQUEMES"
+    },
+    {
+        "id_estado": 230,
+        "id_pais": 26,
+        "nom_cidade": "BOA VISTA"
+    },
+    {
+        "id_estado": 230,
+        "id_pais": 26,
+        "nom_cidade": "CARACARAI"
+    },
+    {
+        "id_estado": 230,
+        "id_pais": 26,
+        "nom_cidade": "RORAINOPOLIS"
+    },
+    {
+        "id_estado": 240,
+        "id_pais": 26,
+        "nom_cidade": "FLORIANOPOLIS"
+    },
+    {
+        "id_estado": 240,
+        "id_pais": 26,
+        "nom_cidade": "JOINVILLE"
+    },
+    {
+        "id_estado": 240,
+        "id_pais": 26,
+        "nom_cidade": "BLUMENAU"
+    },
+    {
+        "id_estado": 250,
+        "id_pais": 26,
+        "nom_cidade": "SAO PAULO"
+    },
+    {
+        "id_estado": 250,
+        "id_pais": 26,
+        "nom_cidade": "GUARULHOS"
+    },
+    {
+        "id_estado": 250,
+        "id_pais": 26,
+        "nom_cidade": "CAMPINAS"
+    },
+    {
+        "id_estado": 260,
+        "id_pais": 26,
+        "nom_cidade": "ARACAJU"
+    },
+    {
+        "id_estado": 260,
+        "id_pais": 26,
+        "nom_cidade": "NOSSA SENHORA DO SOCORRO"
+    },
+    {
+        "id_estado": 260,
+        "id_pais": 26,
+        "nom_cidade": "LAGARTO"
+    },
+    {
+        "id_estado": 270,
+        "id_pais": 26,
+        "nom_cidade": "PALMAS"
+    },
+    {
+        "id_estado": 270,
+        "id_pais": 26,
+        "nom_cidade": "ARAGUAINA"
+    },
+    {
+        "id_estado": 270,
+        "id_pais": 26,
+        "nom_cidade": "GURUPI"
+    }
+]

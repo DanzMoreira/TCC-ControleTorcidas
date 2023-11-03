@@ -1,0 +1,9 @@
+{
+    "id_num_cpf": 99407997057, 
+    "data_hora": "2023-10-15T15:41:44",
+    "desc_local": "RUA ALAMEDA",
+    "desc_ocorrencia": "ROUBO",
+    "id_medida": 2,
+    "data_ini": "2022-10-01T00:00:00",
+    "data_fim": "2023-10-01T00:00:00"
+}

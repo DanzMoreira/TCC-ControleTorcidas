@@ -1,0 +1,786 @@
+[
+    {
+        "nome_pais": "AFEGANISTAO",
+        "abrev_pais": "AFE"
+    },
+    {
+        "nome_pais": "AFRICA DO SUL",
+        "abrev_pais": "AFR"
+    },
+    {
+        "nome_pais": "ALBANIA",
+        "abrev_pais": "ALB"
+    },
+    {
+        "nome_pais": "ALEMANHA",
+        "abrev_pais": "ALE"
+    },
+    {
+        "nome_pais": "ANDORRA",
+        "abrev_pais": "AND"
+    },
+    {
+        "nome_pais": "ANGOLA",
+        "abrev_pais": "ANG"
+    },
+    {
+        "nome_pais": "ANTIGUA E BARBUDA",
+        "abrev_pais": "ANT"
+    },
+    {
+        "nome_pais": "ARABIA SAUDITA",
+        "abrev_pais": "ARA"
+    },
+    {
+        "nome_pais": "ARGELIA",
+        "abrev_pais": "ARG"
+    },
+    {
+        "nome_pais": "ARGENTINA",
+        "abrev_pais": "ARG"
+    },
+    {
+        "nome_pais": "ARMENIA",
+        "abrev_pais": "ARM"
+    },
+    {
+        "nome_pais": "AUSTRALIA",
+        "abrev_pais": "AUS"
+    },
+    {
+        "nome_pais": "AUSTRIA",
+        "abrev_pais": "AUS"
+    },
+    {
+        "nome_pais": "AZERBAIJAO",
+        "abrev_pais": "AZE"
+    },
+    {
+        "nome_pais": "BAHAMAS",
+        "abrev_pais": "BAH"
+    },
+    {
+        "nome_pais": "BANGLADESH",
+        "abrev_pais": "BAN"
+    },
+    {
+        "nome_pais": "BARBADOS",
+        "abrev_pais": "BAR"
+    },
+    {
+        "nome_pais": "BAREM",
+        "abrev_pais": "BAR"
+    },
+    {
+        "nome_pais": "BELGICA",
+        "abrev_pais": "BEL"
+    },
+    {
+        "nome_pais": "BELIZE",
+        "abrev_pais": "BLZ"
+    },
+    {
+        "nome_pais": "BENIN",
+        "abrev_pais": "BEN"
+    },
+    {
+        "nome_pais": "BIELORRUSSIA",
+        "abrev_pais": "BIE"
+    },
+    {
+        "nome_pais": "BOLIVIA",
+        "abrev_pais": "BOL"
+    },
+    {
+        "nome_pais": "BOSNIA E HERZEGOVINA",
+        "abrev_pais": "BOS"
+    },
+    {
+        "nome_pais": "BOTSUANA",
+        "abrev_pais": "BOT"
+    },
+    {
+        "nome_pais": "BRASIL",
+        "abrev_pais": "BRA"
+    },
+    {
+        "nome_pais": "BRUNEI",
+        "abrev_pais": "BRU"
+    },
+    {
+        "nome_pais": "BULGARIA",
+        "abrev_pais": "BUL"
+    },
+    {
+        "nome_pais": "BURQUINA FASO",
+        "abrev_pais": "BUR"
+    },
+    {
+        "nome_pais": "BURUNDI",
+        "abrev_pais": "BUR"
+    },
+    {
+        "nome_pais": "BUTAO",
+        "abrev_pais": "BUT"
+    },
+    {
+        "nome_pais": "CABO VERDE",
+        "abrev_pais": "CAB"
+    },
+    {
+        "nome_pais": "CAMAROES",
+        "abrev_pais": "CAM"
+    },
+    {
+        "nome_pais": "CAMBOJA",
+        "abrev_pais": "CAM"
+    },
+    {
+        "nome_pais": "CANADA",
+        "abrev_pais": "CAN"
+    },
+    {
+        "nome_pais": "CATAR",
+        "abrev_pais": "CAT"
+    },
+    {
+        "nome_pais": "CAZAQUISTAO",
+        "abrev_pais": "CAZ"
+    },
+    {
+        "nome_pais": "CHADE",
+        "abrev_pais": "CHA"
+    },
+    {
+        "nome_pais": "CHILE",
+        "abrev_pais": "CHI"
+    },
+    {
+        "nome_pais": "CHINA",
+        "abrev_pais": "CHI"
+    },
+    {
+        "nome_pais": "CHIPRE",
+        "abrev_pais": "CHI"
+    },
+    {
+        "nome_pais": "COLOMBIA",
+        "abrev_pais": "COL"
+    },
+    {
+        "nome_pais": "COMORES",
+        "abrev_pais": "COM"
+    },
+    {
+        "nome_pais": "CONGO",
+        "abrev_pais": "CON"
+    },
+    {
+        "nome_pais": "COREIA DO NORTE",
+        "abrev_pais": "COR"
+    },
+    {
+        "nome_pais": "COREIA DO SUL",
+        "abrev_pais": "COR"
+    },
+    {
+        "nome_pais": "COSTA DO MARFIM",
+        "abrev_pais": "COS"
+    },
+    {
+        "nome_pais": "COSTA RICA",
+        "abrev_pais": "COS"
+    },
+    {
+        "nome_pais": "CROACIA",
+        "abrev_pais": "CRO"
+    },
+    {
+        "nome_pais": "CUBA",
+        "abrev_pais": "CUB"
+    },
+    {
+        "nome_pais": "DINAMARCA",
+        "abrev_pais": "DIN"
+    },
+    {
+        "nome_pais": "DJIBUTI",
+        "abrev_pais": "DJI"
+    },
+    {
+        "nome_pais": "DOMINICA",
+        "abrev_pais": "DOM"
+    },
+    {
+        "nome_pais": "EGITO",
+        "abrev_pais": "EGI"
+    },
+    {
+        "nome_pais": "EL SALVADOR",
+        "abrev_pais": "EL "
+    },
+    {
+        "nome_pais": "EMIRADOS ARABES UNIDOS",
+        "abrev_pais": "EMI"
+    },
+    {
+        "nome_pais": "EQUADOR",
+        "abrev_pais": "EQU"
+    },
+    {
+        "nome_pais": "ERITREIA",
+        "abrev_pais": "ERI"
+    },
+    {
+        "nome_pais": "ESLOVAQUIA",
+        "abrev_pais": "ESL"
+    },
+    {
+        "nome_pais": "ESLOVENIA",
+        "abrev_pais": "ESL"
+    },
+    {
+        "nome_pais": "ESPANHA",
+        "abrev_pais": "ESP"
+    },
+    {
+        "nome_pais": "ESTADOS UNIDOS",
+        "abrev_pais": "EST"
+    },
+    {
+        "nome_pais": "ESTONIA",
+        "abrev_pais": "EST"
+    },
+    {
+        "nome_pais": "ETIOPIA",
+        "abrev_pais": "ETI"
+    },
+    {
+        "nome_pais": "FIJI",
+        "abrev_pais": "FIJ"
+    },
+    {
+        "nome_pais": "FILIPINAS",
+        "abrev_pais": "FIL"
+    },
+    {
+        "nome_pais": "FINLANDIA",
+        "abrev_pais": "FIN"
+    },
+    {
+        "nome_pais": "FRANCA",
+        "abrev_pais": "FRA"
+    },
+    {
+        "nome_pais": "GABAO",
+        "abrev_pais": "GAB"
+    },
+    {
+        "nome_pais": "GAMBIA",
+        "abrev_pais": "GAM"
+    },
+    {
+        "nome_pais": "GANA",
+        "abrev_pais": "GAN"
+    },
+    {
+        "nome_pais": "GEORGIA",
+        "abrev_pais": "GEO"
+    },
+    {
+        "nome_pais": "GRANADA",
+        "abrev_pais": "GRA"
+    },
+    {
+        "nome_pais": "GRECIA",
+        "abrev_pais": "GRE"
+    },
+    {
+        "nome_pais": "GUATEMALA",
+        "abrev_pais": "GUA"
+    },
+    {
+        "nome_pais": "GUIANA",
+        "abrev_pais": "GUI"
+    },
+    {
+        "nome_pais": "GUINE",
+        "abrev_pais": "GUI"
+    },
+    {
+        "nome_pais": "GUINE EQUATORIAL",
+        "abrev_pais": "GUI"
+    },
+    {
+        "nome_pais": "GUINE-BISSAU",
+        "abrev_pais": "GUI"
+    },
+    {
+        "nome_pais": "HAITI",
+        "abrev_pais": "HAI"
+    },
+    {
+        "nome_pais": "HONDURAS",
+        "abrev_pais": "HON"
+    },
+    {
+        "nome_pais": "HUNGRIA",
+        "abrev_pais": "HUN"
+    },
+    {
+        "nome_pais": "IEMEN",
+        "abrev_pais": "IEM"
+    },
+    {
+        "nome_pais": "ILHAS MARSHALL",
+        "abrev_pais": "ILH"
+    },
+    {
+        "nome_pais": "ILHAS SALOMAO",
+        "abrev_pais": "ILH"
+    },
+    {
+        "nome_pais": "INDIA",
+        "abrev_pais": "IND"
+    },
+    {
+        "nome_pais": "INDONESIA",
+        "abrev_pais": "IND"
+    },
+    {
+        "nome_pais": "IRA",
+        "abrev_pais": "IRA"
+    },
+    {
+        "nome_pais": "IRAQUE",
+        "abrev_pais": "IRQ"
+    },
+    {
+        "nome_pais": "IRLANDA",
+        "abrev_pais": "IRL"
+    },
+    {
+        "nome_pais": "ISLANDIA",
+        "abrev_pais": "ISL"
+    },
+    {
+        "nome_pais": "ISRAEL",
+        "abrev_pais": "ISR"
+    },
+    {
+        "nome_pais": "ITALIA",
+        "abrev_pais": "ITA"
+    },
+    {
+        "nome_pais": "JAMAICA",
+        "abrev_pais": "JAM"
+    },
+    {
+        "nome_pais": "JAPAO",
+        "abrev_pais": "JAP"
+    },
+    {
+        "nome_pais": "JORDANIA",
+        "abrev_pais": "JOR"
+    },
+    {
+        "nome_pais": "KOSOVO",
+        "abrev_pais": "KOS"
+    },
+    {
+        "nome_pais": "KUWAIT",
+        "abrev_pais": "KUW"
+    },
+    {
+        "nome_pais": "LAOS",
+        "abrev_pais": "LAO"
+    },
+    {
+        "nome_pais": "LESOTO",
+        "abrev_pais": "LES"
+    },
+    {
+        "nome_pais": "LETONIA",
+        "abrev_pais": "LET"
+    },
+    {
+        "nome_pais": "LIBANO",
+        "abrev_pais": "LBN"
+    },
+    {
+        "nome_pais": "LIBERIA",
+        "abrev_pais": "LBR"
+    },
+    {
+        "nome_pais": "LIBIA",
+        "abrev_pais": "LIB"
+    },
+    {
+        "nome_pais": "LIECHTENSTEIN",
+        "abrev_pais": "LIE"
+    },
+    {
+        "nome_pais": "LITUANIA",
+        "abrev_pais": "LIT"
+    },
+    {
+        "nome_pais": "LUXEMBURGO",
+        "abrev_pais": "LUX"
+    },
+    {
+        "nome_pais": "MACEDONIA DO NORTE",
+        "abrev_pais": "MAC"
+    },
+    {
+        "nome_pais": "MADAGASCAR",
+        "abrev_pais": "MAD"
+    },
+    {
+        "nome_pais": "MALASIA",
+        "abrev_pais": "MAL"
+    },
+    {
+        "nome_pais": "MALAUI",
+        "abrev_pais": "MAL"
+    },
+    {
+        "nome_pais": "MALDIVAS",
+        "abrev_pais": "MAL"
+    },
+    {
+        "nome_pais": "MALI",
+        "abrev_pais": "MAL"
+    },
+    {
+        "nome_pais": "MALTA",
+        "abrev_pais": "MAL"
+    },
+    {
+        "nome_pais": "MARROCOS",
+        "abrev_pais": "MAR"
+    },
+    {
+        "nome_pais": "MAURICIA",
+        "abrev_pais": "MAU"
+    },
+    {
+        "nome_pais": "MAURITANIA",
+        "abrev_pais": "MAU"
+    },
+    {
+        "nome_pais": "MEXICO",
+        "abrev_pais": "MEX"
+    },
+    {
+        "nome_pais": "MIANMAR",
+        "abrev_pais": "MIA"
+    },
+    {
+        "nome_pais": "MICRONESIA",
+        "abrev_pais": "MIC"
+    },
+    {
+        "nome_pais": "MOCAMBIQUE",
+        "abrev_pais": "MOC"
+    },
+    {
+        "nome_pais": "MOLDAVIA",
+        "abrev_pais": "MOL"
+    },
+    {
+        "nome_pais": "MONACO",
+        "abrev_pais": "MON"
+    },
+    {
+        "nome_pais": "MONGOLIA",
+        "abrev_pais": "MGL"
+    },
+    {
+        "nome_pais": "MONTENEGRO",
+        "abrev_pais": "MTG"
+    },
+    {
+        "nome_pais": "NAMIBIA",
+        "abrev_pais": "NAM"
+    },
+    {
+        "nome_pais": "NAURU",
+        "abrev_pais": "NAU"
+    },
+    {
+        "nome_pais": "NEPAL",
+        "abrev_pais": "NEP"
+    },
+    {
+        "nome_pais": "NICARAGUA",
+        "abrev_pais": "NIC"
+    },
+    {
+        "nome_pais": "NIGER",
+        "abrev_pais": "NGR"
+    },
+    {
+        "nome_pais": "NIGERIA",
+        "abrev_pais": "NIG"
+    },
+    {
+        "nome_pais": "NORUEGA",
+        "abrev_pais": "NOR"
+    },
+    {
+        "nome_pais": "NOVA ZELANDIA",
+        "abrev_pais": "NOV"
+    },
+    {
+        "nome_pais": "OMA",
+        "abrev_pais": "OMA"
+    },
+    {
+        "nome_pais": "PAISES BAIXOS",
+        "abrev_pais": "HOL"
+    },
+    {
+        "nome_pais": "PALAU",
+        "abrev_pais": "PAL"
+    },
+    {
+        "nome_pais": "PANAMA",
+        "abrev_pais": "PAN"
+    },
+    {
+        "nome_pais": "PAPUA NOVA GUINE",
+        "abrev_pais": "PAP"
+    },
+    {
+        "nome_pais": "PAQUISTAO",
+        "abrev_pais": "PAQ"
+    },
+    {
+        "nome_pais": "PARAGUAI",
+        "abrev_pais": "PAR"
+    },
+    {
+        "nome_pais": "PERU",
+        "abrev_pais": "PER"
+    },
+    {
+        "nome_pais": "POLONIA",
+        "abrev_pais": "POL"
+    },
+    {
+        "nome_pais": "PORTUGAL",
+        "abrev_pais": "POR"
+    },
+    {
+        "nome_pais": "QUENIA",
+        "abrev_pais": "QUE"
+    },
+    {
+        "nome_pais": "QUIRGUISTAO",
+        "abrev_pais": "QUI"
+    },
+    {
+        "nome_pais": "QUIRIBATI",
+        "abrev_pais": "QUR"
+    },
+    {
+        "nome_pais": "REINO UNIDO",
+        "abrev_pais": "REI"
+    },
+    {
+        "nome_pais": "REPUBLICA CENTRO-AFRICANA",
+        "abrev_pais": "RCA"
+    },
+    {
+        "nome_pais": "REPUBLICA DOMINICANA",
+        "abrev_pais": "RPD"
+    },
+    {
+        "nome_pais": "REPUBLICA TCHECA",
+        "abrev_pais": "REP"
+    },
+    {
+        "nome_pais": "ROMENIA",
+        "abrev_pais": "ROM"
+    },
+    {
+        "nome_pais": "RUANDA",
+        "abrev_pais": "RUA"
+    },
+    {
+        "nome_pais": "RUSSIA",
+        "abrev_pais": "RUS"
+    },
+    {
+        "nome_pais": "SALVACAO",
+        "abrev_pais": "SAL"
+    },
+    {
+        "nome_pais": "SAMOA",
+        "abrev_pais": "SAM"
+    },
+    {
+        "nome_pais": "SAN MARINO",
+        "abrev_pais": "SAN"
+    },
+    {
+        "nome_pais": "SANTA LUCIA",
+        "abrev_pais": "SAN"
+    },
+    {
+        "nome_pais": "S\u00c3O CRISTOVAO E NEVIS",
+        "abrev_pais": "SAO"
+    },
+    {
+        "nome_pais": "S\u00c3O TOME E PRINCIPE",
+        "abrev_pais": "STP"
+    },
+    {
+        "nome_pais": "SAO VICENTE E GRANADINAS",
+        "abrev_pais": "SVG"
+    },
+    {
+        "nome_pais": "SEICHELES",
+        "abrev_pais": "SEI"
+    },
+    {
+        "nome_pais": "SENEGAL",
+        "abrev_pais": "SEN"
+    },
+    {
+        "nome_pais": "SERRA LEOA",
+        "abrev_pais": "SEL"
+    },
+    {
+        "nome_pais": "SERVIA",
+        "abrev_pais": "SER"
+    },
+    {
+        "nome_pais": "SINGAPURA",
+        "abrev_pais": "SIN"
+    },
+    {
+        "nome_pais": "SIRIA",
+        "abrev_pais": "SIR"
+    },
+    {
+        "nome_pais": "SOMALIA",
+        "abrev_pais": "SOM"
+    },
+    {
+        "nome_pais": "SRI LANKA",
+        "abrev_pais": "SRI"
+    },
+    {
+        "nome_pais": "SUDAO",
+        "abrev_pais": "SUD"
+    },
+    {
+        "nome_pais": "SUDAO DO SUL",
+        "abrev_pais": "SUD"
+    },
+    {
+        "nome_pais": "SUECIA",
+        "abrev_pais": "SUE"
+    },
+    {
+        "nome_pais": "SUICA",
+        "abrev_pais": "SUI"
+    },
+    {
+        "nome_pais": "SURINAME",
+        "abrev_pais": "SUR"
+    },
+    {
+        "nome_pais": "SUAZILANDIA",
+        "abrev_pais": "SUA"
+    },
+    {
+        "nome_pais": "TAILANDIA",
+        "abrev_pais": "TAI"
+    },
+    {
+        "nome_pais": "TAIWAN",
+        "abrev_pais": "TWN"
+    },
+    {
+        "nome_pais": "TAJIQUISTAO",
+        "abrev_pais": "TAJ"
+    },
+    {
+        "nome_pais": "TANZANIA",
+        "abrev_pais": "TAN"
+    },
+    {
+        "nome_pais": "TIMOR-LESTE",
+        "abrev_pais": "TIM"
+    },
+    {
+        "nome_pais": "TOGO",
+        "abrev_pais": "TOG"
+    },
+    {
+        "nome_pais": "TONGA",
+        "abrev_pais": "TON"
+    },
+    {
+        "nome_pais": "TRINDADE E TOBAGO",
+        "abrev_pais": "TRI"
+    },
+    {
+        "nome_pais": "TUNISIA",
+        "abrev_pais": "TUN"
+    },
+    {
+        "nome_pais": "TURCOMENISTAO",
+        "abrev_pais": "TUR"
+    },
+    {
+        "nome_pais": "TURQUIA",
+        "abrev_pais": "TUR"
+    },
+    {
+        "nome_pais": "TUVALU",
+        "abrev_pais": "TUV"
+    },
+    {
+        "nome_pais": "UCRANIA",
+        "abrev_pais": "UCR"
+    },
+    {
+        "nome_pais": "UGANDA",
+        "abrev_pais": "UGA"
+    },
+    {
+        "nome_pais": "URUGUAI",
+        "abrev_pais": "URU"
+    },
+    {
+        "nome_pais": "USBEQUISTAO",
+        "abrev_pais": "USB"
+    },
+    {
+        "nome_pais": "VANUATU",
+        "abrev_pais": "VAN"
+    },
+    {
+        "nome_pais": "VATICANO",
+        "abrev_pais": "VAT"
+    },
+    {
+        "nome_pais": "VENEZUELA",
+        "abrev_pais": "VEN"
+    },
+    {
+        "nome_pais": "VIETNA",
+        "abrev_pais": "VIE"
+    },
+    {
+        "nome_pais": "ZAMBIA",
+        "abrev_pais": "ZAM"
+    },
+    {
+        "nome_pais": "ZIMBABUE",
+        "abrev_pais": "ZIM"
+    }
+]

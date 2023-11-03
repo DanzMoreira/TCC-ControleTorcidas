@@ -1,0 +1,10 @@
+--------------------------------------------------------
+--  Ref Constraints for Table TIME
+--------------------------------------------------------
+
+  ALTER TABLE "TIME" ADD CONSTRAINT "TIME_FK_CIDADE" FOREIGN KEY ("FK_CIDADE")
+	  REFERENCES "CIDADE" ("ID_CIDADE") ENABLE;
+  ALTER TABLE "TIME" ADD CONSTRAINT "TIME_FK_ESTADO" FOREIGN KEY ("FK_ESTADO")
+	  REFERENCES "ESTADO" ("ID_ESTADO") ENABLE;
+  ALTER TABLE "TIME" ADD CONSTRAINT "TIME_FK_PAIS" FOREIGN KEY ("FK_PAIS")
+	  REFERENCES "PAIS" ("ID_PAIS") ENABLE;

@@ -1,0 +1,54 @@
+CREATE TABLE owner_tcc.time (
+    id_time   NUMBER(4) DEFAULT "OWNER_TCC"."SEQ_TIME"."NEXTVAL" NOT NULL,
+    nome_time VARCHAR2(30 BYTE) NOT NULL,
+    id_cidade NUMBER(4),
+    id_estado NUMBER(4),
+    id_pais   NUMBER
+)
+PCTFREE 10 PCTUSED 40 TABLESPACE users LOGGING
+    STORAGE ( INITIAL 65536 NEXT 1048576 PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS 2147483645 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT
+    )
+NO INMEMORY;
+
+COMMENT ON COLUMN owner_tcc.time.id_time IS
+    'identificador do time';
+
+COMMENT ON COLUMN owner_tcc.time.nome_time IS
+    'nome time';
+
+COMMENT ON COLUMN owner_tcc.time.id_cidade IS
+    'cidade do time';
+
+COMMENT ON COLUMN owner_tcc.time.id_estado IS
+    'estado do time';
+
+COMMENT ON COLUMN owner_tcc.time.id_pais IS
+    'pais do time';
+
+CREATE UNIQUE INDEX owner_tcc.pk_time ON
+    owner_tcc.time (
+        id_time
+    ASC )
+        TABLESPACE users PCTFREE 10
+            STORAGE ( INITIAL 65536 NEXT 1048576 PCTINCREASE 0 MINEXTENTS 1 MAXEXTENTS 2147483645 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL
+            DEFAULT )
+        LOGGING;
+
+ALTER TABLE owner_tcc.time
+    ADD CONSTRAINT pk_time PRIMARY KEY ( id_time )
+        USING INDEX owner_tcc.pk_time;
+
+ALTER TABLE owner_tcc.time
+    ADD CONSTRAINT time_fk_cidade FOREIGN KEY ( id_cidade )
+        REFERENCES owner_tcc.cidade ( id_cidade )
+    NOT DEFERRABLE;
+
+ALTER TABLE owner_tcc.time
+    ADD CONSTRAINT time_fk_estado FOREIGN KEY ( id_estado )
+        REFERENCES owner_tcc.estado ( id_estado )
+    NOT DEFERRABLE;
+
+ALTER TABLE owner_tcc.time
+    ADD CONSTRAINT time_fk_pais FOREIGN KEY ( id_pais )
+        REFERENCES owner_tcc.pais ( id_pais )
+    NOT DEFERRABLE;
